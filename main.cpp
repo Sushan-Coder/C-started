@@ -75,8 +75,6 @@ cout << setw(8) << "Location" << setw(12) << "Population" << endl
      << setw(8) << "Kathmandu" << setw(12) << pop4 << endl;
      return 0;
     }
-    */
-
     #include <iostream>
     using namespace std;
 
@@ -87,6 +85,19 @@ cout << setw(8) << "Location" << setw(12) << "Population" << endl
         unsignVar = (unsignVar * 2) / 3;
         cout << "signedVar = " << signedVar <<endl;
         cout << "unsignVar = " << unsignVar <<endl;
+        return 0;
+    }
+    */
+
+    #include <iostream>
+    
+    using namespace std;
+
+    int main(){
+        int count = 7;
+        float avgWeight = 155.5;
+        double totalWeight = count * avgWeight;
+        cout << "Total Weight = " << totalWeight << endl;
         return 0;
     }
 
