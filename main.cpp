@@ -39,8 +39,7 @@ int main(){
 cout << "Equivalent in Celcius is: " << ctemp << '\n';
 return 0;
 }
-*/
-// program to calculate the area of a circle.
+program to calculate the area of a circle.
 #include <iostream>
 using namespace std;
 
@@ -53,3 +52,15 @@ int main(){
      cout << "Area is: " << Area << endl;
      return 0;
 }
+     */
+    #include <iostream>
+    using namespace std;
+
+    int main(){
+        long pop1 = 2425785, pop2 = 47,  pop3 = 9761;
+        cout << " Location " << "pop."<< endl
+             << "Portcity " << pop1 << endl
+             << "Hightown " << pop2 << endl
+             << "Lowville " << pop3 << endl;
+             return 0;
+    }
