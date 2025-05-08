@@ -52,7 +52,6 @@ int main(){
      cout << "Area is: " << Area << endl;
      return 0;
 }
-     */
     #include <iostream>
     using namespace std;
 
@@ -64,16 +63,16 @@ int main(){
              << "Lowville " << pop3 << endl;
              return 0;
     }
-/*
+             */
 #include <iostream>
 #include <iomanip>
 using namespace std;
 int main(){
-long pop1 = 2425785, pop2 = 47, pop3 = 9761;
+long int pop1 = 2425785, pop2 = 47, pop3 = 9761, pop4 = 84457;
 cout << setw(8) << "Location" << setw(12) << "Population" << endl
      << setw(8) << "Portcity" << setw(12) << pop1 << endl
      << setw(8) << "Hightown" << setw(12) << pop2 << endl
-     << setw(8) << "Lowville" << setw(12) << pop3 << endl;
-return 0;
+     << setw(8) << "Lowville" << setw(12) << pop3 << endl
+     << setw(8) << "Kathmandu" << setw(12) << pop4 << endl;
+     return 0;
     }
-    */
