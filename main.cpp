@@ -1,4 +1,5 @@
 #include<iostream>
 int main(){
-    std:: cout<<"hello"; 
+   std:: cout << "Every age has a language of it's own\n";
+    return 0;
 }
