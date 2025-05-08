@@ -87,8 +87,6 @@ cout << setw(8) << "Location" << setw(12) << "Population" << endl
         cout << "unsignVar = " << unsignVar <<endl;
         return 0;
     }
-    */
-
     #include <iostream>
     
     using namespace std;
@@ -100,4 +98,20 @@ cout << setw(8) << "Location" << setw(12) << "Population" << endl
         cout << "Total Weight = " << totalWeight << endl;
         return 0;
     }
+
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+int intVar = 1500000000;
+intVar = (intVar * 10)/10;
+cout << "intVar = " << intVar << endl;
+intVar = 1500000000;
+intVar = (static_cast<double> (intVar )* 10)/10;
+cout << "intVar = " << intVar << endl;
+return 0;
+}
 
