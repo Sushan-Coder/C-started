@@ -4,7 +4,7 @@ int main(){
     return 0;
 }
     */
-   #include <iostream>
+  /* #include <iostream>
    using namespace std;
    int main(){
 int var1;
@@ -13,4 +13,17 @@ var1 = 20;
 var2 = var1 + 10;
 cout << var2 <<endl;
 return 0;
+}
+*/
+#include <iostream>
+using namespace std;
+int main(){
+    char charvar1 = 'A';
+    char charvar2 = '\t';
+    cout << charvar1 <<endl;
+    cout << charvar2 <<endl;
+    charvar1 = 'B';
+    cout << charvar1 <<endl;
+    cout << '\n' <<endl;
+    return 0;
 }
