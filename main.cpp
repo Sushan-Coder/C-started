@@ -15,6 +15,7 @@ cout << var2 <<endl;
 return 0;
 }
 */
+/*
 #include <iostream>
 using namespace std;
 int main(){
@@ -26,4 +27,16 @@ int main(){
     cout << charvar1 <<endl;
     cout << '\n' <<endl;
     return 0;
+}
+*/
+#include <iostream>
+using namespace std; 
+
+int main(){
+    int ftemp;
+    cout << "Enter temperature in fahrenheit: ";
+    cin >> ftemp;
+    int ctemp = (ftemp-32)*5 / 9;
+cout << "Equivalent in Celcius is: " << ctemp << '\n';
+return 0;
 }
