@@ -28,7 +28,6 @@ int main(){
     cout << '\n' <<endl;
     return 0;
 }
-*/
 #include <iostream>
 using namespace std; 
 
@@ -39,4 +38,18 @@ int main(){
     int ctemp = (ftemp-32)*5 / 9;
 cout << "Equivalent in Celcius is: " << ctemp << '\n';
 return 0;
+}
+*/
+// program to calculate the area of a circle.
+#include <iostream>
+using namespace std;
+
+int main(){
+    float radius;
+    const float PI = 3.14159F;
+     cout << "Enter radius of circle: ";
+     cin >> radius;
+     float Area = PI*radius*radius;
+     cout << "Area is: " << Area << endl;
+     return 0;
 }
