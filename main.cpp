@@ -100,18 +100,18 @@ cout << setw(8) << "Location" << setw(12) << "Population" << endl
     }
 
 */
-
 #include <iostream>
-
 using namespace std;
 
 int main(){
-int intVar = 1500000000;
-intVar = (intVar * 10)/10;
-cout << "intVar = " << intVar << endl;
-intVar = 1500000000;
-intVar = (static_cast<double> (intVar )* 10)/10;
-cout << "intVar = " << intVar << endl;
-return 0;
+   int intVar = 1500000000;
+   intVar = (intVar*10)/10;
+   cout << "intVar = "<< intVar <<endl;
+   intVar = 1500000000;
+   intVar = (static_cast<double> (intVar)*10)/10;
+   intVar += 0.11111;
+   cout << "intVar = " << intVar << endl;
+   return 0;
 }
+
 
