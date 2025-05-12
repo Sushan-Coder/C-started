@@ -98,8 +98,6 @@ cout << setw(8) << "Location" << setw(12) << "Population" << endl
         cout << "Total Weight = " << totalWeight << endl;
         return 0;
     }
-
-*/
 #include <iostream>
 using namespace std;
 
@@ -112,6 +110,19 @@ int main(){
    intVar += 0.11111;
    cout << "intVar = " << intVar << endl;
    return 0;
+}
+*/
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    cout << 6 % 8 << endl
+         << 7 % 8 << endl
+         << 8 % 8 << endl
+         << 9 % 8 << endl
+         << 10 % 8 << endl;
+         return 0;
 }
 
 
