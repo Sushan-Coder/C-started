@@ -111,8 +111,6 @@ int main(){
    cout << "intVar = " << intVar << endl;
    return 0;
 }
-*/
-
 #include <iostream>
 using namespace std;
 
@@ -124,5 +122,22 @@ int main(){
          << 10 % 8 << endl;
          return 0;
 }
+*/
+#include <iostream>
+using namespace std;
 
+int main(){
+    int ans = 27;
+    ans += 10;
+    cout << "Ans =" << ans << endl;
+    ans -=7;
+    cout << ans << endl;
+    ans *= 2;
+    cout << ans << ",";
+    ans /=3;
+    cout << ans << endl;
+    ans %=3;
+    cout << ans << endl;
+    return 0;
+}
 
