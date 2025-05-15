@@ -9,14 +9,14 @@ int main(){
     return 0;
 }
 */
-//Type conversion
+// single line inputs demonstration
 #include <iostream>
 using namespace std;
 
 int main(){
-    cout << (int)'a' << endl;
-    cout << int('a') << endl;
-    cout << (char) 65 << endl;
-    cout << (char) 97 << endl;
+  char c1,c2,c3,c4;
+ cout << "Enter 4 characters:" <<endl;
+  cin >> c1 >> c2 >> c3 >> c4;
+ cout << "char 1 =" << (int)c1 << endl <<"char 2 = " <<  (int)c2 << endl << "char 3 = " << (int)c3 << endl << "char 4 = " << (int)c4 << endl;
     return 0;
 }
