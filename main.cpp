@@ -61,7 +61,7 @@ int main(){
   }
   */
  // Increment/Decrement operators.
- #include <iostream>
+ /*#include <iostream>
  using namespace std;
 
  int main(){
@@ -76,3 +76,18 @@ int main(){
     cout << "counter = " << counter << endl;
     return 0;
  }
+ */
+//program to swap two number.
+#include <iostream>
+using namespace std;
+
+int main(){
+int num1,num2,temp;
+cout << "enter two numbers:" << endl;
+cin >> num1 >> num2;
+temp = num1;
+num1 = num2;
+num2 = temp;
+cout << "Swapped numbers are :" << num1 << endl << num2;
+return 0;
+}
