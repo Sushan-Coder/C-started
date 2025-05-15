@@ -16,5 +16,7 @@ using namespace std;
 int main(){
     cout << (int)'a' << endl;
     cout << int('a') << endl;
+    cout << (char) 65 << endl;
+    cout << (char) 97 << endl;
     return 0;
 }
