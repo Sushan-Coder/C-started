@@ -40,6 +40,7 @@ int main(){
 
    }
    */
+  /*
   #include <iostream>
   using namespace std;
 
@@ -58,3 +59,20 @@ int main(){
     }
     return 0;
   }
+  */
+ // Increment/Decrement operators.
+ #include <iostream>
+ using namespace std;
+
+ int main(){
+    int counter = 7;
+    counter ++;
+    cout << "counter = "<< counter << endl;
+    counter --;
+    cout << "counter = "<< counter << endl;
+    cout << "counter = " << counter++ << endl;
+    cout << "counter = " << counter << endl;
+    cout << "counter = " << ++counter << endl;
+    cout << "counter = " << counter << endl;
+    return 0;
+ }
