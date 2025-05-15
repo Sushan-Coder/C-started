@@ -10,7 +10,7 @@ int main(){
 }
 */
 // single line inputs demonstration
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 int main(){
@@ -20,3 +20,22 @@ int main(){
  cout << "char 1 =" << (int)c1 << endl <<"char 2 = " <<  (int)c2 << endl << "char 3 = " << (int)c3 << endl << "char 4 = " << (int)c4 << endl;
     return 0;
 }
+    */
+   // entered number is odd or even.
+
+   #include <iostream>
+   using namespace std;
+
+   int main(){
+    int num;
+    cout <<"enter a number:";
+    cin >> num;
+    if(num % 2 == 0){
+        cout << num << "\t is even";
+    }
+    else{
+        cout << num << "\t is odd";
+    }
+    return 0;
+
+   }
