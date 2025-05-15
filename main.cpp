@@ -22,7 +22,7 @@ int main(){
 }
     */
    // entered number is odd or even.
-
+/*
    #include <iostream>
    using namespace std;
 
@@ -39,3 +39,22 @@ int main(){
     return 0;
 
    }
+   */
+  #include <iostream>
+  using namespace std;
+
+  int main(){
+    int a,b,c;
+    cout << "enter three sides of a triangle:-" << endl;
+    cin >> a >> b >> c;
+    if( a == b && b == c){
+        cout << "Triangle is equilateral." << endl;
+    }
+    else if(a == b || b == c || a == c){
+ cout << "Triangle is isosceles." << endl;
+    }
+    else{
+        cout << "Triangle is scalane." << endl;
+    }
+    return 0;
+  }
