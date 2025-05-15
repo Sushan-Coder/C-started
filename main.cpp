@@ -78,7 +78,7 @@ int main(){
  }
  */
 //program to swap two number.
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 int main(){
@@ -89,5 +89,19 @@ temp = num1;
 num1 = num2;
 num2 = temp;
 cout << "Swapped numbers are :" << num1 << endl << num2;
+return 0;
+}
+*/
+#include <iostream>
+using namespace std;
+
+int main(){
+    int num1,num2;
+    cout << "enter two numbers:" << endl;
+    cin >> num1 >> num2;
+    num1 = num1+num2;
+    num2 = num1-num2;
+    num1 = num1-num2;
+    cout << "num1 = " << num1 << endl << "num2 = " << num2 << endl;
 return 0;
 }
