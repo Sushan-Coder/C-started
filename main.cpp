@@ -92,7 +92,7 @@ cout << "Swapped numbers are :" << num1 << endl << num2;
 return 0;
 }
 */
-#include <iostream>
+/*include <iostream>
 using namespace std;
 
 int main(){
@@ -104,4 +104,22 @@ int main(){
     num1 = num1-num2;
     cout << "num1 = " << num1 << endl << "num2 = " << num2 << endl;
 return 0;
+}
+*/
+// practical file 
+// program 1: Write a C++ program to reverse a given number.
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n,reverse = 0,rem;
+    cout << "enter a number:" << endl;
+    cin >> n;
+    while(n != 0){
+        rem = n % 10;
+        reverse = reverse*10 + rem;
+        n /= 10;
+    }
+    cout << "reversed number = " << reverse << endl;
+    return 0;
 }
