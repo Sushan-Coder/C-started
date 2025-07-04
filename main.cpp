@@ -126,7 +126,7 @@ int main(){
 */
 
 //Write a C++ program to add two numbers using class.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class Add{
     private:
@@ -150,4 +150,51 @@ int main(){
     add.calculate();
     add.output();
     return 0;
+}
+    */
+//WAP to check whether given number is prime or not.
+/*#include<iostream>
+using namespace std;
+int main(){
+    int i,n,j,count = 0;
+    bool prime = false;
+    cout << "Enter a positive integer:";
+    cin >> n;
+    if(n==0 || n==1){
+        prime = false;
+    }
+    for(i=1;i<=n; i++){
+if(n%i == 0){
+    count++;
+}
+    }
+     if(count == 2){
+    prime = true;
+}
+if(prime){
+cout << n << " is a prime number.";
+}
+else
+ {cout << n << " is not a prime number.";}  
+return 0;
+}
+*/
+//Write a c++ program to check whether the given year is leap year or not.
+#include<iostream>
+using namespace std;
+
+int main(){
+    int year;
+    cout << "Enter a year:";
+    cin >> year;
+    if(year % 400 == 0 || year % 4 == 0){
+        cout << year << " is a leap year." << endl;
+}
+else if (year % 100 == 0){
+    cout << year << " is not a leap year." << endl;
+}
+else {
+    cout << year << " is not a leap year." << endl;
+}
+return 0;
 }
