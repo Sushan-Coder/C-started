@@ -180,7 +180,7 @@ return 0;
 }
 */
 //Write a c++ program to check whether the given year is leap year or not.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 int main(){
@@ -197,4 +197,21 @@ else {
     cout << year << " is not a leap year." << endl;
 }
 return 0;
+}
+*/
+//program to add two numbers using function.
+#include<iostream>
+using namespace std;
+int add(int x, int y);
+
+int main(){
+    int a,b;
+    cout << "enter two numbers :" ;
+    cin >> a >> b;
+   cout << "sum of two numbers = " <<  add(a,b);
+return 0;
+}
+
+int add(int x, int y){
+return (x+y);
 }
