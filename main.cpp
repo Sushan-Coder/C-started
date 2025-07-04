@@ -108,7 +108,7 @@ return 0;
 */
 // practical file 
 // program 1: Write a C++ program to reverse a given number.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 int main(){
@@ -121,5 +121,33 @@ int main(){
         n /= 10;
     }
     cout << "reversed number = " << reverse << endl;
+    return 0;
+}
+*/
+
+//Write a C++ program to add two numbers using class.
+#include<iostream>
+using namespace std;
+class Add{
+    private:
+    int num1,num2,sum;
+    public:
+    void input(){
+        cout<< "Enter two numbers: ";
+        cin >> num1 >> num2;
+    }
+    void calculate(){
+        sum = num1 + num2;
+    }
+    void output(){
+        cout << "The sum of two numbers = " << sum << endl;
+    }
+};
+
+int main(){
+    Add add;
+    add.input();
+    add.calculate();
+    add.output();
     return 0;
 }
