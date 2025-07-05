@@ -384,7 +384,7 @@ return 0;
 }
 */
 //Write a C++ program to search for an element using binary search.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int Search(int array[],int x, int low, int high);
 
@@ -417,4 +417,28 @@ int Search(int array[],int x, int low, int high){
         }
     }
     return -1;
+}
+    */
+// Write a C++ program to find the fibonacci series using recursion.
+#include<iostream>
+using namespace std;
+int fibo(int x);
+int main(){
+    int num,i=0;
+    cout << "Enter the number of terms of the series : ";
+    cin >> num;
+    cout << "Fibonnaci series: ";
+    while(i < num){
+        cout << " "<< fibo(i);
+        i++;
+    }
+    return 0;
+}
+int fibo(int x){
+    if( x == 1 || x == 0){
+        return x;
+    }
+    else{
+        return(fibo(x-1)+fibo(x-2));
+    }
 }
