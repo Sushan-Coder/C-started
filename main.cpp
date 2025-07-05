@@ -363,7 +363,7 @@ int main(){
 }
     */
 //Write a C++ program to find the factorial of a given number.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 int main(){
@@ -381,4 +381,40 @@ int main(){
     }
     cout << "Factorial of " << n << " is " << factorial;
 return 0;
+}
+*/
+//Write a C++ program to search for an element using binary search.
+#include<iostream>
+using namespace std;
+int Search(int array[],int x, int low, int high);
+
+int main(){
+    int array[] = {3,4,5,6,7,8,9};
+    int x;
+    cout << "Enter the element of array : "<< endl;
+    cin >> x;
+    int n = sizeof(array)/sizeof(array[0]);
+    int result = Search(array,x,0,n-1);
+    if(result == -1){
+        cout<<"Not found!";
+    }
+    else{
+        cout<< "Element is found in the index " << result;
+    }
+    return 0;
+}
+int Search(int array[],int x, int low, int high){
+    while(low <= high){
+        int mid = low + (high-low)/2;
+        if(x == array[mid]){
+            return mid;
+        }
+        if(x > array[mid]){
+            low = mid + 1;
+        }
+        else{
+            high = mid - 1;
+        }
+    }
+    return -1;
 }
