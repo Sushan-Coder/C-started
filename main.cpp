@@ -323,7 +323,7 @@ int main(){
 }
     */
    //Write a C++ program to calculate the area of rectangle, square using function overloading.
-   #include<iostream>
+   /*#include<iostream>
    using namespace std;
    int areaOfRectangle(int length, int breadth);
    int areaOfSquare(int side);
@@ -343,3 +343,21 @@ int main(){
    int areaOfSquare(int side){
     return side*side;
    }
+   */
+//Write a C++ program to add two numbers using pointers.
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num1,num2,sum;
+    int *ptr1,*ptr2;
+    cout << "Enter the first number : ";
+    cin >> num1;
+    cout << "Enter the second number : ";
+    cin >> num2;
+    ptr1 = &num1;
+    ptr2 = &num2;
+    sum = *ptr1 + *ptr2;
+    cout << "The sum of the two numbers "<< num1 << " and " << num2 << " is "<< sum;
+    return 0;
+}
