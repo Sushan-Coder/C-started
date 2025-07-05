@@ -304,7 +304,7 @@ int main(){
 }
     */
 // Write a program in C++ to find the GCD of two numbers.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 int main(){
@@ -321,3 +321,25 @@ int main(){
     cout <<"GCD of "<< a << " and "<< b << " is : "<< gcd << endl;
     return 0;
 }
+    */
+   //Write a C++ program to calculate the area of rectangle, square using function overloading.
+   #include<iostream>
+   using namespace std;
+   int areaOfRectangle(int length, int breadth);
+   int areaOfSquare(int side);
+   int main(){
+    int s,l,b;
+    cout << "Enter the side of square : ";
+    cin >> s;
+    cout << "Enter the length and breadth of rectangle : ";
+    cin >> l >> b;
+    cout << "Area of Rectangle = " << areaOfRectangle(l,b) << endl;
+    cout << "Area of Square = " << areaOfSquare(s) << endl;
+    return 0;
+   }
+   int areaOfRectangle(int length, int breadth){
+    return length * breadth;
+   } 
+   int areaOfSquare(int side){
+    return side*side;
+   }
