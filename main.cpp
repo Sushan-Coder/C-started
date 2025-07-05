@@ -200,7 +200,7 @@ return 0;
 }
 */
 //program to add two numbers using function.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int add(int x, int y);
 
@@ -214,4 +214,67 @@ return 0;
 
 int add(int x, int y){
 return (x+y);
+}
+*/
+//program6: Write a C++ program to accept and display the details of a student using class.
+/*#include<iostream>
+using namespace std;
+
+class Student{
+    private:
+    string name,regd,branch;
+    int sem;
+    public:
+    void input();
+    void display();
+};
+void Student::input(){
+cout <<"Enter Name:";
+cin >> name;
+cout << "Enter Regdno.:";
+cin >> regd;
+cout << "Enter Branch:";
+cin >> branch;
+cout <<"Enter Sem:";
+cin >> sem;
+};
+void Student::display(){
+    cout << "Name = " << name << endl;
+    cout << "Regdno = "<< regd << endl;
+    cout << "Branch = "<< branch << endl;
+    cout << "Sem = "<< sem << endl;
+};
+int main(){
+    Student s;
+    s.input();
+    s.display();
+    return 0;
+}
+*/
+
+//Write a C++ program to count the number of words and characters in a given text.
+#include<iostream>
+using namespace std;
+
+int main() {
+    string text;
+    int word = 0, character = 0;
+
+    cout << "Enter a text: ";
+    getline(cin, text);
+
+    for (int i = 0; i < text.length(); i++) {
+        if (text[i] != ' ') {
+            character++;
+            // Check word start
+            if (i == 0 || text[i - 1] == ' ') {
+                word++;
+            }
+        }
+    }
+
+    cout << "Number of Words: " << word << endl;
+    cout << "Number of characters (excluding spaces): " << character << endl;
+
+    return 0;
 }
