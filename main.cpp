@@ -345,7 +345,7 @@ int main(){
    }
    */
 //Write a C++ program to add two numbers using pointers.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 int main(){
@@ -360,4 +360,25 @@ int main(){
     sum = *ptr1 + *ptr2;
     cout << "The sum of the two numbers "<< num1 << " and " << num2 << " is "<< sum;
     return 0;
+}
+    */
+//Write a C++ program to find the factorial of a given number.
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    long factorial = 1.0;
+    cout << "Enter a positive integer : ";
+    cin >> n;
+    if( n < 0){
+        cout << "Error! factorial doesn't exists."<< endl;
+    }
+    else{
+        for(int i=1; i <= n; ++i){
+            factorial *= i;
+        }
+    }
+    cout << "Factorial of " << n << " is " << factorial;
+return 0;
 }
