@@ -253,7 +253,7 @@ int main(){
 */
 
 //Write a C++ program to count the number of words and characters in a given text.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 int main() {
@@ -276,5 +276,29 @@ int main() {
     cout << "Number of Words: " << word << endl;
     cout << "Number of characters (excluding spaces): " << character << endl;
 
+    return 0;
+}
+*/
+//Write a program to compare two strings using string functions.
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+int main(){
+    char str1[100], str2[100];
+    cout << "Enter the first string: ";
+    cin.getline(str1, 100);
+    cout << "Enter the second string: ";
+    cin.getline(str2, 100);
+    int result = strcmp(str1, str2);
+    if(result == 0){
+        cout<< "The strings are equal.";
+    }
+    else if(result > 0){
+        cout << "The first string is less than the second string.";
+    }
+    else{
+        cout<< "The first string is greater than the second string.";
+    }
     return 0;
 }
