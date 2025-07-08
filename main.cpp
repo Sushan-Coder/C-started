@@ -503,7 +503,7 @@ int main() {
 }
 */
 // static variable
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 void setn();
 int main(){
@@ -521,3 +521,30 @@ void setn(){
     cout << " X = " << x << endl;
     cout << " Y = " << y << endl;
 }
+    */
+   #include<iostream>
+   using namespace std;
+
+   class A{
+    static int number;
+    int n;
+    public:
+    void setn(){
+        n = ++ number;
+        cout << " n = " << n << endl;
+    }
+    static void display(){
+        cout << " number = " << number << endl;
+    }
+   };
+   int A :: number;
+
+   int main(){
+    A obj,obj1;
+    obj.display();
+    obj1.display();
+    obj.setn();
+    obj1.setn();
+   A :: display();
+return 0;
+   }
