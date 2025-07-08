@@ -420,7 +420,7 @@ int Search(int array[],int x, int low, int high){
 }
     */
 // Write a C++ program to find the fibonacci series using recursion.
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int fibo(int x);
 int main(){
@@ -441,4 +441,83 @@ int fibo(int x){
     else{
         return(fibo(x-1)+fibo(x-2));
     }
+}
+    */
+//GCD of two numbers.
+/*#include<iostream>
+using namespace std;
+
+int main(){
+    int a,b;
+    cout << "Enter two numbers : (a >= b) ";
+    cin >> a >> b;
+    if(a >= b){
+    while(b>0){
+        int r = a % b;
+        a = b;
+        b = r;
+
+    }
+    cout << "GCD = " << a;
+
+}
+else{
+    cout << "invalid input.";
+}
+return 0;
+}
+*/
+/*
+#include<iostream>
+using namespace std;
+
+class Base {
+public:
+    virtual void Output() {
+        cout << "Output for the base class." << endl;
+    }
+
+    void display() {
+        cout << "displaying the base class!" << endl;
+    }
+};
+
+class derived : public Base {
+public:
+    void Output() {
+        cout << "Output for the derived class." << endl;
+    }
+
+    void display() {
+        cout << "displaying the derived class." << endl;
+    }
+};
+
+int main() {
+    Base* bpoint;       // Pointer to base
+    derived dpoint;     // Derived object
+    bpoint = &dpoint;   // Base pointer points to derived object
+
+    bpoint->display();  // Calls Base::display (not virtual)
+    bpoint->Output();   // Calls Derived::Output (because virtual
+}
+*/
+// static variable
+#include<iostream>
+using namespace std;
+void setn();
+int main(){
+setn();
+setn();
+setn(); 
+    return 0;
+
+}
+void setn(){
+      static int x = 1;
+    int y = 1;
+    y = ++y;
+    x = ++x;
+    cout << " X = " << x << endl;
+    cout << " Y = " << y << endl;
 }
